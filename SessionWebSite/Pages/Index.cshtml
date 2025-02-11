@@ -1,0 +1,16 @@
+﻿@page
+@model SessionWebSite.Pages.IndexModel
+@{
+}
+
+<table class="table">
+    <thead>
+        <tr><th>Имя</th><th>Животное</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var person in Model.smesharikis)
+        {
+            <tr><td>@person.Name</td><td>@person.Animal</td></tr>
+        }
+    </tbody>
+</table>
